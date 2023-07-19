@@ -6,5 +6,9 @@
     "moduleResolution": "bundler",
     "allowSyntheticDefaultImports": true
   },
-  "include": ["vite.renderer.config.ts"]
+  "include": [
+    "vite.renderer.config.ts",
+    "vite.main.config.ts",
+    "vite.preload.config.ts"
+  ]
 }
