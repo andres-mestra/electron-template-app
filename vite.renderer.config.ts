@@ -1,6 +1,7 @@
-import { join, resolve } from 'path'
+import { join } from 'path'
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+import tsconfigPaths from 'vite-tsconfig-paths'
 
 // https://vitejs.dev/config
 export default defineConfig(({ mode }) => {
@@ -8,6 +9,6 @@ export default defineConfig(({ mode }) => {
 
   return {
     root,
-    plugins: [react()],
+    plugins: [tsconfigPaths(), react()],
   }
 })
